@@ -8,7 +8,7 @@ from distutils.core import setup
 from distutils.extension import Extension
 from sys import version
 
-pyalsa_version = '0.6'
+pyalsa_version = '0.7'
 
 # patch distutils if it's too old to cope with the "classifiers" or
 # "download_url" keywords

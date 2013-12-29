@@ -46,7 +46,6 @@ class SinePlayer(Thread):
         # we generate the buffer in the calling thread for less
         # latency when switching frequencies
         
-
         # More than 100 writes/s are pushing it - play multiple buffers
         # for higher frequencies
 

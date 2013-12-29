@@ -1,0 +1,18 @@
+Source: pyalsaaudio
+Section: python
+Priority: optional
+Maintainer: Paul Brossier <piem@debian.org>
+Build-Depends: debhelper (>= 5.0.37.2),
+               python-all-dev (>= 2.3.5-11),
+               libasound2-dev,
+               python-sphinx,
+               libjs-jquery,
+               libjs-underscore
+Standards-Version: 3.9.5
+
+Package: python-alsaaudio
+Architecture: any
+Depends: ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}
+Recommends: libjs-jquery, libjs-underscore
+Description: Alsa bindings for Python
+ The PyAlsaAudio package contains bindings for the ALSA sound API.

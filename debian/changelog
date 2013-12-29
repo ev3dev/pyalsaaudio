@@ -1,0 +1,54 @@
+pyalsaaudio (0.7-1) unstable; urgency=medium
+
+  * New upstream release
+  * Upgrade package to 3.0 (quilt)
+
+ -- Paul Brossier <piem@debian.org>  Sun, 29 Dec 2013 09:55:13 -0400
+
+pyalsaaudio (0.5+svn36-1) unstable; urgency=low
+
+  * New upstream version with more patches in svn
+  * debian/control:
+    - remove rafl from maintainer field (closes: #523169)
+    - add Build-Depends on sphinx
+    - span Build-Depends on multiple lines
+    - change section to python, bump Standards-Version, fix typo on API
+    - add a recommends on libjs-jquery
+  * debian/rules: 
+    - rebuild documentation using sphinx
+    - remove dh_python call
+    - make a link to packaged jquery.js
+    - do not compress javascript files
+  * debian/docs: install freshly generated documentation (closes: #408349)
+  * debian/watch: update to match new tarballs
+
+ -- Paul Brossier <piem@debian.org>  Wed, 16 Sep 2009 14:49:43 +0200
+
+pyalsaaudio (0.2-1) unstable; urgency=low
+
+  * New upstream release
+  * Add a watch file
+  * Use debian/examples and debian/docs
+  * Merge changelog with ubuntu
+  * Add myself to uploaders field
+  * Upload to debian (closes: #382796)
+
+ -- Paul Brossier <piem@debian.org>  Sun, 13 Aug 2006 17:08:01 +0200
+
+pyalsaaudio (0.1-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Florian Ragwitz <rafl@debian.org>  Wed,  9 Aug 2006 00:18:33 +0200
+
+pyalsaaudio (0.1-1ubuntu1) hoary; urgency=low
+
+  * Upload to hoary with python2.4 support
+
+ -- Thom May <thom@ubuntu.com>  Sat, 29 Jan 2005 12:47:04 +0000
+
+pyalsaaudio (0.1-1) unstable; urgency=low
+
+  * First upload.
+
+ -- Thom May <thom@debian.org>  Fri, 07 Jan 2005 19:19:49 +0000
