@@ -1,7 +1,8 @@
 Source: pyalsaaudio
 Section: python
 Priority: optional
-Maintainer: Paul Brossier <piem@debian.org>
+Maintainer: David Lechner <david@lechnology.com>
+XSBC-Original-Maintainer: Paul Brossier <piem@debian.org>
 Build-Depends: debhelper (>= 5.0.37.2),
                python-all-dev (>= 2.3.5-11),
                libasound2-dev,
