@@ -4,16 +4,22 @@ Priority: optional
 Maintainer: David Lechner <david@lechnology.com>
 XSBC-Original-Maintainer: Paul Brossier <piem@debian.org>
 Build-Depends: debhelper (>= 9),
+               dh-python,
                python-all-dev (>= 2.3.5-11),
+               python3-all-dev,
                libasound2-dev,
-               python-sphinx,
-               libjs-jquery,
-               libjs-underscore
+               python-sphinx
 Standards-Version: 3.9.5
 
 Package: python-alsaaudio
 Architecture: any
 Depends: ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}
+Description: Alsa bindings for Python
+ The PyAlsaAudio package contains bindings for the ALSA sound API.
+
+Package: python3-alsaaudio
+Architecture: any
+Depends: ${python3:Depends}, ${shlibs:Depends}, ${misc:Depends}
 Description: Alsa bindings for Python
  The PyAlsaAudio package contains bindings for the ALSA sound API.
 

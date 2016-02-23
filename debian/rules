@@ -3,7 +3,7 @@
 export PYBUILD_NAME=alsaaudio
 
 %:
-	dh $@ --with python2 --with sphinxdoc --buildsystem=pybuild
+	dh $@ --with python2 --with python3 --with sphinxdoc --buildsystem=pybuild
 
 override_dh_auto_clean:
 	dh_auto_clean
