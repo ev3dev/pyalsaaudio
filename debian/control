@@ -13,7 +13,15 @@ Standards-Version: 3.9.5
 
 Package: python-alsaaudio
 Architecture: any
-Depends: ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}, ${sphinxdoc:Depends}
-Recommends: libjs-jquery, libjs-underscore
+Depends: ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}
 Description: Alsa bindings for Python
  The PyAlsaAudio package contains bindings for the ALSA sound API.
+
+Package: python-alsaaudio-doc
+Architecture: all
+Section: doc
+Depends: ${sphinxdoc:Depends}, ${misc:Depends}
+Description: Alsa bindings for Python
+ The PyAlsaAudio package contains bindings for the ALSA sound API.
+ .
+ This package contains the documentation.
