@@ -1,16 +1,14 @@
 #! /usr/bin/make -f 
 
+export PYBUILD_NAME=alsaaudio
+
 %:
-	dh $@ --with python2
+	dh $@ --with python2 --with sphinxdoc --buildsystem=pybuild
 
 override_dh_auto_clean:
 	dh_auto_clean
-	rm -rf doc/html/_sources
-	rm -f doc/html/.buildinfo
-	rm -f doc/html/objects.inv
-	rm -f doc/html/_static/websupport.js
+	make -C doc clean
 
-override_dh_installdocs:
-	dh_installdocs
-	ln -sf /usr/share/javascript/jquery/jquery.js debian/python-alsaaudio/usr/share/doc/python-alsaaudio/html/_static/jquery.js
-	ln -sf /usr/share/javascript/underscore/underscore.js debian/python-alsaaudio/usr/share/doc/python-alsaaudio/html/_static/underscore.js
+override_dh_auto_build:
+	dh_auto_build
+	make -C doc

@@ -1,3 +1,9 @@
+pyalsaaudio (0.8.2-1ev3dev1) UNRELEASED; urgency=medium
+
+  * 
+
+ -- David Lechner <david@lechnology.com>  Mon, 22 Feb 2016 16:12:53 -0600
+
 pyalsaaudio (0.7-1) unstable; urgency=medium
 
   * New upstream release
